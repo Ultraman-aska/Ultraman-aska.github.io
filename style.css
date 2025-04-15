@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Inter', sans-serif;
-  background: #fffafa;
-  color: #ff7f50;
+  font-family: 'Cinzel', serif; /* 荘厳で中世風の印象に */
+  background: linear-gradient(to bottom, #1b1b2f, #16213e); /* 深みのある背景 */
+  color: #fce38a; /* 黄金風の文字色 */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -24,28 +24,34 @@ body {
 
 /* Card */
 .card {
-  background: #fffff0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #fce38a;
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
+  box-shadow: 0 0 30px rgba(252, 227, 138, 0.3);
+  max-width: 420px;
   width: 100%;
+  backdrop-filter: blur(10px);
 }
 
 /* Text */
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 0.5rem;
+  color: #f9ca24;
+  letter-spacing: 1px;
 }
 .subtitle {
   font-size: 1rem;
-  color: #94a3b8;
+  color: #a4b0be;
   margin-bottom: 1rem;
+  font-style: italic;
 }
 .intro {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.8;
+  color: #dcdde1;
   margin-bottom: 1.5rem;
 }
 
@@ -58,22 +64,23 @@ h1 {
 }
 .links a {
   text-decoration: none;
-  color: #38bdf8;
-  background-color: transparent;
-  border: 1px solid #ffe4b5;
-  padding: 8px 16px;
-  border-radius: 8px;
+  color: #ffffff;
+  background-color: #3742fa;
+  border: 2px solid #f9ca24;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 .links a:hover {
-  background-color: #fff8dc;
-  color: #fffff0;
+  background-color: #f9ca24;
+  color: #2f3542;
 }
 
 /* Message */
 .message {
   font-size: 0.9rem;
-  color: #facc15;
+  color: #ffeaa7;
   margin-top: 1rem;
 }
 
@@ -83,6 +90,6 @@ h1 {
     padding: 1.5rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
